@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "goodbye-google-cn",
+  "version": "1.0.0",
+  "description": "Redirect google.cn to google.com.hk .",
+  "content_scripts": [
+    {
+      "matches": ["*://google.cn/*", "*://*.google.cn/*"],
+      "run_at": "document_start",
+      "js": ["redirect.js"]
+    }
+  ]
+}
